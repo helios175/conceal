@@ -4,15 +4,17 @@ android:
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
-    # - platform-tools
-    # - tools
+    - tools
+    - platform-tools
+    - tools
+    # Tools repetead on purpose as instructed in https://docs.travis-ci.com/user/languages/android/
 
     # The BuildTools version used by your project
-    - build-tools-16.0.0
+#    - build-tools-16.0.0
     - build-tools-25.0.0
 
     # The SDK version used to compile your project
-    - android-16
+#    - android-16
     - android-23
 
     # Additional components
