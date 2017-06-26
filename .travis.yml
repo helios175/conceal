@@ -34,6 +34,7 @@ jdk:
 
 before_install:
   - . .travis/install-ndk
+  - $ANDROID_NDK/ndk-build --version
   - . .travis/install-buck
   - PATH=`pwd`/buck/bin:$PATH
   - export PATH
